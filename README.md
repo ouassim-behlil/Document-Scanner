@@ -52,6 +52,9 @@ To run this project, you’ll need the following:
    ```
 
 ---
+## Dataset
+The dataset used for training and testing the OCR model consists of various receipt images. The dataset is not included in this repository due to size constraints, but you can find similar datasets online or create your own by scanning receipts.
+links to datasets: (https://www.kaggle.com/datasets/trainingdatapro/ocr-receipts-text-detection)
 
 ## License
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
