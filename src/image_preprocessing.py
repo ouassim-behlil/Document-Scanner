@@ -35,8 +35,8 @@ def preprocess_image(image_path):
         255,                     # Maximum pixel value
         cv2.ADAPTIVE_THRESH_GAUSSIAN_C, 
         cv2.THRESH_BINARY, 
-        blockSize=11,            # Size of the neighborhood area
-        C=2                      # Constant subtracted from the mean
+        blockSize=3,            # Size of the neighborhood area
+        C=1.5                      # Constant subtracted from the mean
     )
     
     # Step 5: Resize the image to ensure consistent dimensions
