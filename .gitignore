@@ -3,3 +3,4 @@ __pycache__/
 .env
 outputs/
 *.log
+ocr_receipt_project/
