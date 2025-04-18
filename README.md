@@ -48,6 +48,6 @@ links to datasets: (https://www.kaggle.com/datasets/trainingdatapro/ocr-receipts
 ---
 
 ## Acknowledgments
-- **Mentors and Team**: Special thanks to my mentor **Hamza Hadda* and colleagues for their guidance and support during this internship.
+- **Mentors and Team**: Special thanks to my mentor **Hamza Hadda** and colleagues for their guidance and support during this internship.
 
 
