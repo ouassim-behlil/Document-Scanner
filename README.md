@@ -37,34 +37,17 @@ Here are some of the features we aim to implement:
 ### Prerequisites
 To run this project, you’ll need the following:
 - Python 3.8 or higher
-- Pip (Python package manager)
-- Tesseract OCR engine
 
-#### Install Tesseract OCR
-1. **Windows**: Download the installer from [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki) and follow the installation steps.
-2. **macOS**: Use Homebrew:
-   ```bash
-   brew install tesseract
-   ```
-3. **Linux**: Use your package manager:
-   ```bash
-   sudo apt-get install tesseract-ocr
-   ```
 
 ---
 ## Dataset
 The dataset used for training and testing the OCR model consists of various receipt images. The dataset is not included in this repository due to size constraints, but you can find similar datasets online or create your own by scanning receipts.
 links to datasets: (https://www.kaggle.com/datasets/trainingdatapro/ocr-receipts-text-detection)
 
-## License
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## Acknowledgments
-- **Tesseract OCR**: The core OCR engine used in this project.
-- **OpenCV**: For image preprocessing tasks.
-- **Pytesseract**: Python wrapper for Tesseract OCR.
-- **Mentors and Team**: Special thanks to my mentors and colleagues for their guidance and support during this internship.
+- **Mentors and Team**: Special thanks to my mentor **Hamza Hadda* and colleagues for their guidance and support during this internship.
 
 
