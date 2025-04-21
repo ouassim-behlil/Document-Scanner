@@ -34,7 +34,7 @@ The system consists of two main components:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/document-processing.git
+   git clone https://github.com/ouassim-behlil/Receipt-OCR.git
    cd document-processing
    ```
 
