@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  document-processor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./input:/app/input
+      - ./output:/app/processed
+      - ./extracted_text:/app/extracted_text
+    restart: "no"
+    tty: true
+    # Default command replaced in runtime with actual processing commands

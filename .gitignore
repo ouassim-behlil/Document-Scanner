@@ -4,3 +4,4 @@ __pycache__/
 outputs/
 *.log
 ocr_receipt_project/
+docker-readme.md
