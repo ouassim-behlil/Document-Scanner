@@ -1,4 +1,4 @@
-# Document Processing System 📄✨
+# Document Processing System 
 
 [![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -10,16 +10,16 @@ A powerful, end-to-end document processing system that automatically detects doc
 
 ![Document Processing Flow](https://via.placeholder.com/800x200.png?text=Document+Processing+Flow)
 
-## 🌟 Features
+##  Features
 
-- **📸 Automatic Document Detection** - Intelligently identifies document boundaries in images
-- **🔄 Perspective Correction** - Transforms skewed documents to a proper top-down view
-- **✨ Image Enhancement** - Applies adaptive processing to improve document quality
-- **📝 Text Extraction** - Extracts text with high accuracy using state-of-the-art OCR
-- **📦 Batch Processing** - Process multiple documents at once efficiently
-- **🧩 Structured Output** - Save extracted text in various formats (JSON, TXT)
-- **🖼️ Visualization** - Generate informative visualizations of detected text regions
-- **🐳 Docker Support** - Run the entire system in containers without complex setup
+- ** Automatic Document Detection** - Intelligently identifies document boundaries in images
+- ** Perspective Correction** - Transforms skewed documents to a proper top-down view
+- ** Image Enhancement** - Applies adaptive processing to improve document quality
+- ** Text Extraction** - Extracts text with high accuracy using state-of-the-art OCR
+- ** Batch Processing** - Process multiple documents at once efficiently
+- ** Structured Output** - Save extracted text in various formats (JSON, TXT)
+- ** Visualization** - Generate informative visualizations of detected text regions
+- ** Docker Support** - Run the entire system in containers without complex setup
 
 ## 📋 Table of Contents
 
@@ -37,7 +37,7 @@ A powerful, end-to-end document processing system that automatically detects doc
 - [Contributing](#-contributing)
 - [License](#-license)
 
-## 🔧 Installation
+##  Installation
 
 ### Standard Installation
 
@@ -70,7 +70,7 @@ A powerful, end-to-end document processing system that automatically detects doc
    mkdir -p input output extracted_text
    ```
 
-## 🚀 Usage
+##  Usage
 
 ### Command Line Interface
 
@@ -228,7 +228,7 @@ for item in text_data:
     print(f"{item['text']} (Confidence: {item['confidence']:.2f})")
 ```
 
-## ⚙️ Advanced Configuration
+##  Advanced Configuration
 
 ### DocScanner Parameters
 
@@ -254,7 +254,7 @@ for item in text_data:
 | `det_db_thresh` | Text detection threshold | 0.3 |
 | `det_db_box_thresh` | Text detection box threshold | 0.5 |
 
-## 📊 Output Formats
+##  Output Formats
 
 ### Text Extraction JSON Output
 
@@ -284,7 +284,7 @@ for item in text_data:
 }
 ```
 
-## 🌍 Real-world Applications
+##  Real-world Applications
 
 - **Document Digitization**: Convert physical documents to digital format
 - **Form Processing**: Extract data from forms for automatic database entry
@@ -294,7 +294,7 @@ for item in text_data:
 - **Legacy Document Conversion**: Convert old documents for archival purposes
 - **Invoice Processing**: Automate accounts payable workflows
 
-## 💪 Performance Tips
+##  Performance Tips
 
 - **GPU Acceleration**: Enable GPU support for significantly faster text extraction
   ```bash
@@ -315,7 +315,7 @@ for item in text_data:
   python scan.py --min-area-ratio 0.2 --max-angle-range 45 ...
   ```
 
-## 👨‍💻 Contributing
+## 👨 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -325,12 +325,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/ouassim-behlil">Your Name</a>
+  Made with ❤️ by <a href="https://github.com/ouassim-behlil">Ouassim Behlil</a>
 </p>
