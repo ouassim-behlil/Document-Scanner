@@ -8,7 +8,7 @@
 
 A powerful, end-to-end document processing system that automatically detects document boundaries, corrects perspective, enhances images, and extracts text using OCR. Perfect for digitizing physical documents, automating data entry, and building document management systems.
 
-![Document Processing Flow](https://via.placeholder.com/800x200.png?text=Document+Processing+Flow)
+<!-- ![Document Processing Flow](https://via.placeholder.com/800x200.png?text=Document+Processing+Flow) -->
 
 ##  Features
 
