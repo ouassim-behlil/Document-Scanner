@@ -20,7 +20,7 @@ class TestDocScanner(unittest.TestCase):
         self.test_output_dir = tempfile.mkdtemp()
         
         # Create a simple test image with a quadrilateral shape (representing a document)
-        self.test_image_path = os.path.join(self.test_output_dir, "test_document.jpg")
+        self.test_image_path = "input/10.jpg"
         # Create a 600x800 white image
         img = np.ones((600, 800, 3), dtype=np.uint8) * 255
         # Draw a black quadrilateral representing a document (slightly rotated rectangle)
