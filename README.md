@@ -12,14 +12,14 @@ A powerful, end-to-end document processing system that automatically detects doc
 
 ##  Features
 
-- ** Automatic Document Detection** - Intelligently identifies document boundaries in images
-- ** Perspective Correction** - Transforms skewed documents to a proper top-down view
-- ** Image Enhancement** - Applies adaptive processing to improve document quality
-- ** Text Extraction** - Extracts text with high accuracy using state-of-the-art OCR
-- ** Batch Processing** - Process multiple documents at once efficiently
-- ** Structured Output** - Save extracted text in various formats (JSON, TXT)
-- ** Visualization** - Generate informative visualizations of detected text regions
-- ** Docker Support** - Run the entire system in containers without complex setup
+- **Automatic Document Detection** - Intelligently identifies document boundaries in images
+- **Perspective Correction** - Transforms skewed documents to a proper top-down view
+- **Image Enhancement** - Applies adaptive processing to improve document quality
+- **Text Extraction** - Extracts text with high accuracy using state-of-the-art OCR
+- **Batch Processing** - Process multiple documents at once efficiently
+- **Structured Output** - Save extracted text in various formats (JSON, TXT)
+- **Visualization** - Generate informative visualizations of detected text regions
+- **Docker Support** - Run the entire system in containers without complex setup
 
 ## 📋 Table of Contents
 
