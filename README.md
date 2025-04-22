@@ -5,6 +5,7 @@
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://www.docker.com/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green.svg)](https://opencv.org/)
 [![PaddleOCR](https://img.shields.io/badge/PaddleOCR-2.7.0-red.svg)](https://github.com/PaddlePaddle/PaddleOCR)
+[![Run Tests](https://github.com/ouassim-behlil/Receipt-OCR/actions/workflows/python-app.yml/badge.svg)](https://github.com/ouassim-behlil/Receipt-OCR/actions/workflows/python-app.yml)
 
 A powerful, end-to-end document processing system that automatically detects document boundaries, corrects perspective, enhances images, and extracts text using OCR. Perfect for digitizing physical documents, automating data entry, and building document management systems.
 
