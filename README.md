@@ -51,15 +51,7 @@ docker-compose run --rm document-processor python scan.py --image /app/input/doc
 # then text extraction...
 ```
 
-## Example
 
-### Input Image
-
-![Input Document Example](docs/input_example.jpg)
-
-### Output Image
-
-![Processed Output Example](docs/output_example.jpg)
 
 ## License
 
