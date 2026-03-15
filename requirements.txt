@@ -1,4 +1,4 @@
-paddlepaddle==2.5.0
+paddlepaddle==2.6.2
 paddleocr==2.7.0
 opencv-python==4.8.1.78
 scipy==1.11.3
