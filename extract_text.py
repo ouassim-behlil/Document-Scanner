@@ -27,7 +27,7 @@ import cv2
 import numpy as np
 import logging
 from typing import List, Dict, Tuple, Union, Optional, Any
-from paddleocr import PaddleOCR, draw_ocr
+from paddleocr import PaddleOCR
 
 # Set up logging
 logging.basicConfig(
@@ -255,34 +255,34 @@ class TextExtractor:
             texts = [item['text'] for item in results]
             scores = [item['confidence'] for item in results]
             
-            # Create visualization using PaddleOCR's draw_ocr
+            # Create visualization using OpenCV
             vis_dir = os.path.join(output_dir, "visualizations")
             os.makedirs(vis_dir, exist_ok=True)
             
-            font_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fonts/simfang.ttf')
-            if not os.path.exists(font_path):
-                # Default fallback font path for Linux/Mac
-                font_path = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
-                # For Windows
-                if os.name == 'nt':
-                    font_path = 'C:/Windows/Fonts/Arial.ttf'
-            
-            # Draw OCR results if we have a valid font
-            if os.path.exists(font_path):
-                result_img = draw_ocr(image, boxes, texts, scores, font_path=font_path)
-                
-                # Convert back to OpenCV format if necessary
-                if isinstance(result_img, np.ndarray):
-                    vis_img = result_img
-                else:
-                    vis_img = np.array(result_img)
-                
-                # Save visualization
-                base_name = os.path.splitext(os.path.basename(image_path))[0]
-                vis_path = os.path.join(vis_dir, f"{base_name}_ocr.jpg")
-                cv2.imwrite(vis_path, vis_img)
-            else:
-                logger.warning("Font file not found. Skipping visualization.")
+            vis_img = image.copy()
+            for box, text, score in zip(boxes, texts, scores):
+                pts = np.array(box, dtype=np.int32).reshape((-1, 1, 2))
+                cv2.polylines(vis_img, [pts], isClosed=True, color=(0, 255, 0), thickness=2)
+                label = f"{text} ({score:.2f})"
+                origin = (int(box[0][0]), int(box[0][1]) - 5)
+                (lw, lh), baseline = cv2.getTextSize(
+                    label, cv2.FONT_HERSHEY_SIMPLEX, 0.5, 1
+                )
+                cv2.rectangle(
+                    vis_img,
+                    (origin[0], origin[1] - lh - baseline),
+                    (origin[0] + lw, origin[1] + baseline),
+                    (0, 0, 0), cv2.FILLED
+                )
+                cv2.putText(
+                    vis_img, label, origin,
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1
+                )
+
+            # Save visualization
+            base_name = os.path.splitext(os.path.basename(image_path))[0]
+            vis_path = os.path.join(vis_dir, f"{base_name}_ocr.jpg")
+            cv2.imwrite(vis_path, vis_img)
         
         except Exception as e:
             logger.error(f"Error creating visualization for {image_path}: {str(e)}")
